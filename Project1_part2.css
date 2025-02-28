@@ -1,0 +1,131 @@
+/* Import an elegant, moon-like font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(180deg, #0b132b, #1c2541, #3a506b, #5bc0be); /* Soft moonlight gradient */
+    background-size: 400% 400%;
+    animation: gradientShift 20s infinite alternate;
+    color: #e0e0e0;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f4f4f4;
+    text-shadow: 0px 0px 15px #ffffff;
+    animation: moon-glow 3s infinite alternate;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Image */
+.image-container {
+    margin: 40px auto;
+}
+
+img {
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #ffffff;
+    transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Moon Phases */
+.moon-phases {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    color: #b3c7f9;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1.3em;
+    max-width: 400px;
+    margin: auto;
+    font-weight: 400;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Poem Section */
+.poem {
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.poem p {
+    font-size: 1.5em;
+    line-height: 2;
+    text-align: left;
+    white-space: pre-line;
+    font-weight: 300;
+}
+
+/* Link Section */
+.link-section {
+    margin: 40px auto;
+    font-size: 1.2em;
+}
+
+a {
+    color: #b3c7f9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-style: italic;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Text Glow Animation */
+@keyframes moon-glow {
+    0% { text-shadow: 0px 0px 5px #ffffff; }
+    50% { text-shadow: 0px 0px 20px #e0e0e0; }
+    100% { text-shadow: 0px 0px 5px #ffffff; }
+}
