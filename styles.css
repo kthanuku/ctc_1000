@@ -1,0 +1,12 @@
+.parent {
+ background-color: coral;   
+}
+.child-one {
+background-color: teal;
+}
+.child-two {
+background-color: darkseagreen;
+}
+.child-three {
+background-color: salmon;
+}
